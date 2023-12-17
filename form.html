@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave Request Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Request Leave</h2>
+    <div class="close-button">×</div>
+
+    <form action="#" method="POST" class="leave-form">
+      <div class="form-group">
+        <label for="leave-type">Leave Type<span class="required-sign">*</span></label>
+        <select id="leave-type" name="leave-type" required>
+          <option value="vacation">Vacation</option>
+          <option value="sick">Sick Leave</option>
+          <option value="personal">Personal Leave</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="remember-me">
+          <input type="checkbox" id="remember-me" name="remember-me">
+          Remember Me
+          <span class="info-icon">
+            <i class="fas fa-info-circle"></i>
+            <span class="info-tooltip">Your additional information here.</span>
+          </span>
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="dates">Dates<span class="required-sign">*</span></label>
+        <div class="dates-container">
+          <input type="date" id="start-date" name="start-date" required>
+          <span class="dash">-</span>
+          <input type="date" id="end-date" name="end-date" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="recommended-by">Recommended By<span class="required-sign">*</span></label>
+        <select id="recommended-by" name="recommended-by" required>
+            <option value="Vice Principal">Vice Principal</option>
+            <option value="Principal">Principal</option>
+            <option value="Coordinator">Coordinator</option>
+            <option value="Other">Other</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <label for="reason">About</label>
+        <textarea id="reason" name="reason" rows="4" placeholder="Include Reason for the Approval"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="submit-btn">Request Now</button>
+        <button type="button" class="cancel-btn">Cancel</button>
+      </div>
+    </form>
+    <div class="container1">
+            <form action="#" method="POST" class="leave-form">
+              
+            </form>
+            
+            <form action="#" method="POST" class="other-form">
+              <!-- Second form for other request -->
+              <h3>Your Other Request</h3>
+              <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+              </div>
+              <div class="form-group">
+                <label for="leave-type">Leave Type:</label>
+                <select id="leave-type" name="leave-type"  required>
+                  <option value="full-Day">Full Day</option>
+                  <option value="half-Day">Half Day</option>
+                  <option value="Non-Working Day">Non-Working Day</option>
+
+
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
